@@ -116,7 +116,11 @@
                                 <action selector="cancelButtonTapped:" destination="Z6K-Fr-Szr" id="jCg-eC-yWx"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="4Zi-lW-DjA"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="4Zi-lW-DjA">
+                            <connections>
+                                <action selector="doneBarButtonPressed:" destination="Z6K-Fr-Szr" id="aGl-dB-g7N"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="dueDatePicker" destination="Afk-QM-kkT" id="wdj-kb-rMW"/>
@@ -196,6 +200,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="dueDatePicker" destination="IbW-nf-0DT" id="ZfT-M4-Rhp"/>
                         <outlet property="subtaskTextField" destination="ZM1-Uj-tP5" id="nPd-Nx-9BJ"/>
                         <outlet property="taskTextField" destination="t7K-Dm-P0F" id="Stj-fk-Eib"/>
                     </connections>
